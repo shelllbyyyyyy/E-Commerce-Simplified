@@ -1,0 +1,10 @@
+{
+  "name": "@v1/typescript-config",
+  "author": "Shelllbyyyyyy",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
