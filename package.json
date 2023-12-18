@@ -3,13 +3,17 @@
   "author": "Shelllbyyyyyy",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "@v1/eslint-config": "workspace:*",
     "@v1/typescript-config": "workspace:*",
+    "@v1/db": "workspace:*",
+    "@v1/supabase": "workspace:*",
     "prettier": "^3.1.0",
     "turbo": "^1.10.16"
   },

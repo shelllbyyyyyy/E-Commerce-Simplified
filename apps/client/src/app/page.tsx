@@ -7,7 +7,7 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center h-screen w-full gap-4">
         <h2 className="text-xs uppercase">meet shelby</h2>
         <h1 className="text-3xl font-bold">E-Commerce Simplified</h1>
-        <Link href="/Dashboard">
+        <Link href="/dashboard">
           <Button size="lg" variant="default">
             Start Shopping
           </Button>
