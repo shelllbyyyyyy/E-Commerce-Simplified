@@ -1,0 +1,23 @@
+{
+  "name": "@v1/supabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "author": "tShelllbyyyyy",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/ssr": "^0.0.10",
+    "@supabase/supabase-js": "^2.39.0",
+    "@t3-oss/env-core": "^0.7.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

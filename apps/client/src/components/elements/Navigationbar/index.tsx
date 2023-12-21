@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
+  NavigationMenuLink,
   NavigationMenuList,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import * as React from "react";
@@ -19,26 +21,48 @@ const Navigationbar = () => {
               <h1 className="text-xl font-black">Shelby.shop</h1>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1">
-            <ul className="menu menu-horizontal px-1 gap-5">
+          <NavigationMenuItem className="hidden md:flex justify-between items-center w-full md:w-auto">
+            <ul className="menu menu-horizontal px-1 gap-4">
               <li>
-                <a>Home</a>
+                <NavigationMenuLink
+                  href="/home"
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <p>Home</p>
+                </NavigationMenuLink>
               </li>
               <li>
-                <a>About</a>
+                <NavigationMenuLink
+                  href="/product"
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <p>Product</p>
+                </NavigationMenuLink>
               </li>
               <li>
-                <a>Product</a>
+                <NavigationMenuLink
+                  href="/about"
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <p>About</p>
+                </NavigationMenuLink>
               </li>
               <li>
-                <a>Support</a>
+                <NavigationMenuLink
+                  href="/support"
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <p>Support</p>
+                </NavigationMenuLink>
               </li>
             </ul>
           </NavigationMenuItem>
           <NavigationMenuItem className="flex w-full md:w-auto md:order-2 max-md:items-end max-md:justify-end">
-            <Button className="max-md:hidden items-end" variant="default">
-              Login
-            </Button>
+            <Link href="/signin">
+              <Button className="max-md:hidden items-end" variant="default">
+                Login
+              </Button>
+            </Link>
             <div className="dropdown dropdown-end justify-end items-end">
               <div
                 tabIndex={0}
@@ -60,7 +84,7 @@ const Navigationbar = () => {
                   />
                 </svg>
               </div>
-              <ul className="dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul className="dropdown-content text-end z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
                   <a>Home</a>
                 </li>
