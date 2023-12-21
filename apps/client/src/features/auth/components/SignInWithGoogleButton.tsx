@@ -4,10 +4,6 @@ import { supabaseClient } from "@v1/supabase";
 import Image from "next/image";
 
 export const SignInWithGoogleButton = () => {
-  // const supabaseClient = createBrowserClient(
-  //   env.NEXT_PUBLIC_SUPABASE_URL,
-  //   env.NEXT_PUBLIC_SUPABASE_KEY
-  // );
 
   const signInWithGoogle = async () => {
     await supabaseClient.auth.signInWithOAuth({

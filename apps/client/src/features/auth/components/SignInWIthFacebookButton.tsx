@@ -3,14 +3,7 @@
 import { supabaseClient } from "@v1/supabase";
 import Image from "next/image";
 
-import { env } from "@/env.mjs";
-
 export const SignInWithFacebookButton = () => {
-  // const supabaseClient = createBrowserClient(
-  //   env.NEXT_PUBLIC_SUPABASE_URL,
-  //   env.NEXT_PUBLIC_SUPABASE_KEY
-  // );
-
   const signInWithFacebook = async () => {
     await supabaseClient.auth.signInWithOAuth({
       provider: "facebook",

@@ -2,14 +2,7 @@
 
 import { supabaseClient } from "@v1/supabase";
 
-import { env } from "@/env.mjs";
-
 export const SignInWithGithubButton = () => {
-  // const supabaseClient = createBrowserClient(
-  //   env.NEXT_PUBLIC_SUPABASE_URL,
-  //   env.NEXT_PUBLIC_SUPABASE_KEY
-  // );
-
   const signInWithGithub = async () => {
     await supabaseClient.auth.signInWithOAuth({
       provider: "github",
