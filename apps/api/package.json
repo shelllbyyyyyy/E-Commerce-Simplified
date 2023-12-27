@@ -25,6 +25,8 @@
     "@nestjs/passport": "^10.0.2",
     "@nestjs/platform-express": "^10.0.0",
     "@supabase/supabase-js": "^2.39.0",
+    "@v1/db": "workspace:*",
+    "@v1/dto": "workspace:*",
     "dotenv-flow": "^4.0.1",
     "env-var": "^7.4.1",
     "nestjs-supabase-auth": "^1.0.9",
