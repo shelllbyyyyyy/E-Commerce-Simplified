@@ -13,6 +13,7 @@
     "@v1/eslint-config": "workspace:*",
     "@v1/typescript-config": "workspace:*",
     "@v1/db": "workspace:*",
+    "@v1/dto": "workspace:*",
     "@v1/supabase": "workspace:*",
     "prettier": "^3.1.0",
     "turbo": "^1.10.16"

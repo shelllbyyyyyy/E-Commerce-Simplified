@@ -7,7 +7,7 @@ import { SupabaseService } from "@/lib/supabase.service";
 
 @Injectable()
 export class ProfileService {
-  constructor(private readonly prismaService: PrismaService, private readonly supabaseService: SupabaseService) {}
+  constructor(private readonly prismaService: PrismaService) {}
 
   public async getProfile(id: string) {
     const profile = await this.prismaService.user.findUnique({
