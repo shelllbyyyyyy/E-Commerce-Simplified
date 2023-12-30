@@ -3,7 +3,6 @@ import { Prisma } from "@v1/db";
 import { EditProfileDTO } from "@v1/dto";
 
 import { PrismaService } from "@/lib/prisma.service";
-import { SupabaseService } from "@/lib/supabase.service";
 
 @Injectable()
 export class ProfileService {
