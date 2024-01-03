@@ -1,7 +1,7 @@
 import React from "react";
 
-const Background = () => {
-  return <div className="absolute bg-gray-50 w-1/2 h-screen" />;
+const Background: React.FC = () => {
+  return <div className="fixed bg-gray-50 w-1/2 h-[100%]"></div>;
 };
 
 export default Background;

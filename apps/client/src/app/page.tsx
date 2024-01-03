@@ -13,7 +13,7 @@ export default function Home() {
           </Button>
         </Link>
       </section>
-      <section className=" absolute bottom-2 right-2">
+      <section className="fixed bottom-4 right-4">
         <Button variant="secondary">🙋 Help</Button>
       </section>
     </main>

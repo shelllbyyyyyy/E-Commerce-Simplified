@@ -4,8 +4,6 @@ import "./globals.css";
 import Navigationbar from "@/components/elements/Navigationbar";
 import Background from "@/components/elements/Backgound";
 
-import { ThemeProvider } from "@/components/provider/theme-provider";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,18 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="relative h-screen w-full">
-          {/* <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-            disableTransitionOnChange
-          > */}
-          {/* <Background /> */}
-          <Navigationbar />
-          {children}
-          {/* </ThemeProvider> */}
-        </main>
+          <Background />
+          <main className="relative h-screen w-full">
+            <Navigationbar />
+            {children}
+          </main>
       </body>
     </html>
   );
