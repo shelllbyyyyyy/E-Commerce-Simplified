@@ -1,14 +1,13 @@
-import {
-  IsArray,
-  IsNotEmpty,
-  IsNumber,
-  IsString,
-  MaxLength,
+import { 
+  IsArray, 
+  IsNotEmpty, 
+  IsNumber, 
+  IsString 
 } from "class-validator";
+
 
 export class CreateProductDTO {
   @IsString()
-  @IsNotEmpty()
   readonly id: string;
 
   @IsString()
@@ -20,11 +19,14 @@ export class CreateProductDTO {
   readonly price: number;
 
   @IsNumber()
-  @MaxLength(5)
   readonly rating: number;
 
   @IsArray()
   @IsString({ each: true })
+  @IsNotEmpty()
+  readonly image: string[];
+
+  @IsString()
   @IsNotEmpty()
   readonly slug: string;
 

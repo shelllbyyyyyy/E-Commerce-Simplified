@@ -10,7 +10,6 @@
     "test": "turbo run test"
   },
   "devDependencies": {
-    "@v1/eslint-config": "workspace:*",
     "@v1/typescript-config": "workspace:*",
     "@v1/db": "workspace:*",
     "@v1/dto": "workspace:*",
