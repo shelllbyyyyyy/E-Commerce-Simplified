@@ -1,10 +1,12 @@
 import { Module } from "@nestjs/common";
-import { UserModule } from "./user/user.module";
+import { PassportModule } from "@nestjs/passport";
 
-import { SupabaseModule } from "./core/auth/supabase/supabase.module";
+import { SupabaseModule } from "@/core/auth/supabase/supabase.module";
+import { ProfileModule } from "@/core/profile/profile.module";
+import { ProductModule } from "./core/product/product.module";
 
 @Module({
-  imports: [UserModule, SupabaseModule],
+  imports: [ProfileModule, SupabaseModule, PassportModule, ProductModule],
   controllers: [],
   providers: [],
 })
