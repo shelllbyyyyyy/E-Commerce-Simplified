@@ -7,7 +7,7 @@ const config = {
     '@ianvs/prettier-plugin-sort-imports',
     'prettier-plugin-tailwindcss',
   ],
-  tailwindConfig: './apps/web/tailwind.config.ts',
+  tailwindConfig: './apps/client/tailwind.config.ts',
   importOrder: [
     '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
     '^(next/(.*)$)|^(next$)',
